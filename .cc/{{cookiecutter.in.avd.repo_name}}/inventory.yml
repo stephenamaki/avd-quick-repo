@@ -1,0 +1,15 @@
+---
+all:
+  children:
+
+    {{ cookiecutter.in.avd.fabric_name }}:
+      children:
+
+        {{ cookiecutter.in.avd.fabric_name }}_SPINES:
+          var:
+            type: spine
+          hosts:
+{%- for spine in cookiecutter.in.fabric_spine_inventory %}
+            {{ spine.hostname }}:
+              ansible_host: {{ spine.management_ip.split('/')[0] }}
+{%- endfor %}

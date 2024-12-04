@@ -102,13 +102,6 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
-# ignore clab files
-clab-*
-*.bak
-
-# ignore cv onboarding token
-clab/cv-onboarding-token
-
 # ingnore images and other files not to be uploaded to GitHub
 .gitignored/*
 !.gitignored/.gitkeep

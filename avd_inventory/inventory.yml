@@ -1,0 +1,19 @@
+---
+all:
+  children:
+
+    AVD_FABRIC:
+      children:
+
+        AVD_FABRIC_SPINES:
+          var:
+            type: spine
+          hosts:
+            S01:
+              ansible_host: 192.168.0.11
+            S02:
+              ansible_host: 192.168.0.12
+            S03:
+              ansible_host: 192.168.0.13
+            S04:
+              ansible_host: 192.168.0.14

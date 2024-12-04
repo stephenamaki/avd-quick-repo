@@ -1,0 +1,42 @@
+{
+    "in": {
+        "fabric_spine_inventory": [
+            {
+                "id": "1",
+                "hostname": "S01",
+                "management_ip": "192.168.0.11/24",
+                "bgp_as": "65100",
+                "platform": "cEOS"
+            },
+            {
+                "id": "2",
+                "hostname": "S02",
+                "management_ip": "192.168.0.12/24",
+                "bgp_as": "65100",
+                "platform": "cEOS"
+            },
+            {
+                "id": "3",
+                "hostname": "S03",
+                "management_ip": "192.168.0.13/24",
+                "bgp_as": "65100",
+                "platform": "cEOS"
+            },
+            {
+                "id": "4",
+                "hostname": "S04",
+                "management_ip": "192.168.0.14/24",
+                "bgp_as": "65100",
+                "platform": "cEOS"
+            }
+        ],
+        "avd": {
+            "repo_name": "avd_inventory",
+            "fabric_name": "AVD_FABRIC"
+        }
+    },
+    "out": {},
+    "_copy_without_render": [
+        "*.j2"
+    ]
+}
